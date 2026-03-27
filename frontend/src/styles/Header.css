@@ -1,0 +1,24 @@
+
+.top-header {
+    width: 100%;       /* Займати 100% ширини батьківського елемента */
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    height: 10vh;
+    align-items: center;
+}
+
+
+.top-header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5vh;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.top-header a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    transform: scale(1.05);
+}
