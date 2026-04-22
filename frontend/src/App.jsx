@@ -1,15 +1,29 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import Header from "./components/Header.jsx"; // Не забудь імпортувати хедер!
+import AddBuses from "./pages/AddBus.jsx";
+import Header from "./components/Header.jsx";
+import Departure from "./pages/Departure.jsx";
+import BusList from "./pages/BusList.jsx";
+import AllBuses from "./pages/AllBuses.jsx";
 
 function App() {
     return (
         <BrowserRouter>
-            <Header /> {/* Хедер буде на всіх сторінках */}
+            <Header />
             <Routes>
-                {/* Кажемо: на шляху "/" показуй компонент Home */}
                 <Route path="/" element={<Home />} />
-                {/* Тут потім додаси інші маршрути */}
+                <Route path="/add" element={<AddBuses />} />
+                <Route path="/all-buses" element={<AllBuses />} />
+                <Route path="/departure" element={<Departure />} />
+
+                <Route
+                    path="/parked"
+                    element={<BusList statusFilter="park" title="УСІ АВТОБУСИ У ПАРКУ" />}
+                />
+                <Route
+                    path="/on-route"
+                    element={<BusList statusFilter="route" title="УСІ АВТОБУСИ НА МАРШРУТІ" />}
+                />
             </Routes>
         </BrowserRouter>
     );

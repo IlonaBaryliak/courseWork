@@ -16,7 +16,7 @@
     justify-content: space-around;
     .button-group{
         display: inherit;
-        gap: 20vw;
+        gap: 5vw;
     }
     .btn-main {
         display: flex;
@@ -59,4 +59,39 @@
     border: 2px solid #000;
     box-shadow:  1.5vh 1.5vh  #fdf061;
     transition: all 0.2s ease;
+}
+@keyframes busDriveIn {
+    0% {
+
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animated-bus {
+    animation-name: busDriveIn;
+    animation-duration: 2.5s;
+
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: both;
+}
+
+@keyframes busDriveIn {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
 }

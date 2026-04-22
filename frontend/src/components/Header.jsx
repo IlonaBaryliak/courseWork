@@ -6,10 +6,10 @@ import bus from '../assets/Bus.svg';
         <header>
             <div className="top-header">
                 <Link to="/">Головна</Link>
-                <Link to="/add">&&&</Link>
+                <Link to="/all-buses">Усі автобуси</Link>
                 <img src={bus} alt="BUS" style={{ width: '6vh', height: 'auto' }}/>
-                <Link to="/departure">На маршруті</Link>
-                <Link to="/buses">У парку</Link>
+                <Link to="/on-route">На маршруті</Link>
+                <Link to="/parked">У парку</Link>
             </div>
         </header>
     )

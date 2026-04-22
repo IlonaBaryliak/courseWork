@@ -28,13 +28,18 @@ function Home() {
                 </div>
             </div>
             <div>
-                <img src={Bus} style={{ position: 'fixed', bottom: 0, margin: '0 0 6%',  width: '30%', zIndex: 1 }} alt="Road" />
+                <img
+                    src={Bus}
+                    className="animated-bus"
+                    style={{ position: 'fixed', bottom: 0, margin: '0 0 6%', width: '30%', zIndex: 1 }}
+                    alt="Bus"
+                />
                 <img src={Road} style={{ position: 'fixed', bottom: 0, width: '120%' }} alt="Road" />
-                <Link to="/buses" className="btn-main-y btn-white-yellow" style={{ position: 'fixed', bottom: 0,right: 0,  margin: '0 5% 4%',  width: '30%', zIndex: 1 }} alt="Road">
-                    Переглянути список автобусів <span className="icon-arrow">
+                {/*<Link to="/all-buses" className="btn-main-y btn-white-yellow" style={{ position: 'fixed', bottom: 0,right: 0,  margin: '0 5% 5%',  width: '30%', zIndex: 1 }} alt="Road">*/}
+                {/*    Переглянути список автобусів <span className="icon-arrow">*/}
 
-                    </span>
-                </Link>
+                {/*    </span>*/}
+                {/*</Link>*/}
             </div>
 
         </Container>

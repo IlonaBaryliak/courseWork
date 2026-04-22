@@ -1,0 +1,116 @@
+.bus-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+h1{
+    margin-left: 15px;
+}
+.stats-info{
+    margin-left: 15px;
+}
+.bus-table th {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 2px solid #333;
+    font-weight: 800;
+}
+
+.bus-table td {
+    padding: 20px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.bus-count {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+.btn-action {
+    padding: 1.5vh 3vh;
+    border: 3px solid #333;
+    border-radius: 15px;
+    font-weight: 900;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 2.2vh; /* Великий шрифт у твоєму стилі */
+    transition: transform 0.1s;
+}
+
+
+.btn-table.yellow {
+    background-color: #fdfd96;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 2vh 3vh;
+    font-size: 2.2vh;
+    margin-right: 1vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1vh;
+    font-family: 'Manrope', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.btn-table.yellow:hover {
+    background-color: #fdf061;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 0 #000;
+}
+
+.btn-table.yellow:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.btn-table.white {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 2vh 3vh;
+    font-size: 2.2vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1vh;
+    font-family: 'Manrope', sans-serif;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    outline: none;
+}
+
+.btn-table.white:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 0 #000;
+}
+
+.btn-table.white:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+.status-tag-park {
+    background: #e1f5fe;
+    color: #0288d1;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.status-tag-route {
+    background: #fff9c4;
+    color: #fbc02d;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
